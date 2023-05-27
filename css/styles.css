@@ -11,8 +11,10 @@
 }
 
 body {
-    font-family: 'roboto', sans-serif;
-    color: var(--main-color);
+    font-family: "Roboto",
+            sans-serif;
+        color: var(--main-text-color);
+        background-color: var(--white-color);
 }
 
 a {
@@ -23,23 +25,36 @@ ul {
     list-style-type: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--active-color);
+}
+
+.list {
+    list-style: none;
+}
 /** HEADER**/
 
 .header {}
 
 .header-nav {}
 
-.header-logo {
+.logo {
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: var(--primery-color);
     text-transform: uppercase;
 }
 
-.logo-web {
-    color: var(--primery-color);
+.logo-header {
+    color: var(--main-color);
 }
 
 .header-nav-list {}
@@ -51,17 +66,18 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--main-color);
 }
 
-.header-add {}
+.header-add {
+    font-style: normal;
+}
 
 .header-add-list {}
 
 .header-add-item {}
 
 .header-add-link {
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -69,7 +85,11 @@ ul {
 }
 
 .header-nav-link:active,
-.header-add-link:active {
+.header-add-link:active,
+.header-nav-link:hover,
+.header-add-link:hover,
+.header-add-link:focus,
+.header-nav-link:focus {
     color: var(--active-color);
 }
 
@@ -83,9 +103,7 @@ ul {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-
-
-
+    text-align: center;
     color: var(--white-color);
 }
 
@@ -109,9 +127,7 @@ ul {
 
 .advantages {}
 
-.advantages-title {
-    display: none;
-}
+.advantages-title {}
 
 .advantages-list {}
 
@@ -136,6 +152,7 @@ ul {
 .picture {}
 
 .picture-title {
+    text-align: center;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -150,18 +167,24 @@ ul {
 
 /**TEAM**/
 
-.team {}
+.team {
+    background-color: var(--light-bg-color);
+}
 
 .team-title {
+    text-align: center;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
 
 }
 
 .team-list {}
 
-.team-item {}
+.team-item {
+    background-color: var(--white-color);
+}
 
 .team-img {}
 
@@ -184,13 +207,7 @@ footer {
     background-color: var(--main-color);
 }
 
-.footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.logo-footer {
     color: var(--light-bg-color);
 }
 
@@ -204,9 +221,7 @@ footer {
 
 /**---------PORTFOLIO-----------**/
 
-/**FILTER-BTN**/
-
-.filter {}
+/**PRODUCT**/
 
 .filter-list {}
 
@@ -228,8 +243,6 @@ footer {
     background-color: var(--active-color);
     color: var(--white-color);
 }
-
-/**PRODUCT**/
 
 .product {}
 
