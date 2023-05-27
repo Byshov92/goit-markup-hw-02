@@ -127,7 +127,9 @@ ul {
 
 .advantages {}
 
-.advantages-title {}
+.advantages-title {
+    color: var(--main-color);
+}
 
 .advantages-list {}
 
@@ -157,6 +159,7 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--main-color);
 }
 
 .picture-list {}
@@ -177,6 +180,7 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--main-color);
 
 }
 
@@ -257,6 +261,7 @@ footer {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--main-color);
 }
 
 .product-text {
